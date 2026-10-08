@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Orvane Atelier</title>
+<meta name="description" content="Orvane Atelier - full-grain leather goods cut, stitched and burnished by hand since 1887. Design a bespoke briefcase, explore the tannery map and build a care kit.">
+<meta name="theme-color" content="#121212">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Caveat:wght@500&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="hdr">
+    <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+    <nav class="nav-left" aria-label="Primary">
+      <ul>
+        <li class="nav-item">
+          <button class="nav-link" aria-expanded="false" aria-controls="mega-col">Collections</button>
+          <div class="mega" id="mega-col"><div class="mega-in">
+            <div><h4>Bags &amp; briefcases</h4><ul>
+              <li><a href="#product" data-product="meridian">The Meridian Briefcase</a></li>
+              <li><a href="#product" data-product="santacroce">The Santa Croce Tote</a></li>
+              <li><a href="#product" data-product="ubrique">The Ubrique Messenger</a></li></ul></div>
+            <div><h4>Travel &amp; portfolio</h4><ul>
+              <li><a href="#product" data-product="aldwych">The Aldwych Weekender</a></li>
+              <li><a href="#product" data-product="brera">The Brera Document Folio</a></li></ul></div>
+            <div><h4>Small goods</h4><ul>
+              <li><a href="#product" data-product="piazza">The Piazza Card Holder</a></li>
+              <li><a href="#home" data-go="home:collection">All pieces</a></li></ul></div>
+            <div class="promo"><strong>Exotic finishes, by request</strong>Hand-scaled, deep-lacquered, cut from a limited number of hides each season.<br><br><a href="#product" data-product="meridian" data-mat="exotic" style="font:600 .7rem var(--f-body);letter-spacing:.18em;text-transform:uppercase;color:var(--brass)">Configure in exotic</a></div>
+          </div></div>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" aria-expanded="false" aria-controls="mega-bes">Bespoke Atelier</button>
+          <div class="mega" id="mega-bes"><div class="mega-in">
+            <div><h4>Design</h4><ul>
+              <li><a href="#product" data-product="meridian">Design your briefcase</a></li>
+              <li><a href="#product" data-product="santacroce">Design your tote</a></li></ul></div>
+            <div><h4>Personalise</h4><ul>
+              <li><a href="#product" data-product="meridian" data-go-mono="1">Monogram &amp; foil stamping</a></li>
+              <li><a href="#product" data-product="piazza">Cardholder in your colour</a></li></ul></div>
+            <div><h4>Presentation</h4><ul>
+              <li><a href="#checkout" data-go="checkout">Gift wrapping &amp; note</a></li>
+              <li><a href="#checkout" data-go="checkout">Certificate of authenticity</a></li></ul></div>
+            <div class="promo"><strong>One hide, one maker</strong>Every bespoke piece is cut and signed by a single craftsperson. Allow six to eight weeks.</div>
+          </div></div>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" aria-expanded="false" aria-controls="mega-her">Heritage</button>
+          <div class="mega" id="mega-her"><div class="mega-in">
+            <div><h4>Our craft</h4><ul>
+              <li><a href="#craft" data-go="craft">The workshop</a></li>
+              <li><a href="#craft" data-go="craft:craftMap">Tannery map</a></li></ul></div>
+            <div><h4>Standards</h4><ul>
+              <li><a href="#craft" data-go="craft:standards">Ethical footprint</a></li>
+              <li><a href="#home" data-go="home:story">A maker's story</a></li></ul></div>
+            <div><h4>Since 1887</h4><ul>
+              <li><a href="#craft" data-go="craft">Five generations</a></li></ul></div>
+            <div class="promo"><strong>Know where every hide began</strong>Five sites, five audits, one open ledger.</div>
+          </div></div>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" aria-expanded="false" aria-controls="mega-care">Care</button>
+          <div class="mega" id="mega-care"><div class="mega-in">
+            <div><h4>Concierge</h4><ul>
+              <li><a href="#care" data-action="quiz">Care quiz</a></li></ul></div>
+            <div><h4>Guides</h4><ul>
+              <li><a href="#care" data-go="care">Leather care guide</a></li>
+              <li><a href="#care" data-go="care:kits">Care kits</a></li></ul></div>
+            <div><h4>Ageing</h4><ul>
+              <li><a href="#product" data-product="meridian" data-go-patina="1">Patina visualizer</a></li></ul></div>
+            <div class="promo"><strong>Three questions, one routine</strong>Tell us your climate, how you carry, and the finish. We build the kit.</div>
+          </div></div>
+        </li>
+      </ul>
+    </nav>
+    <a class="logo" href="#home" data-go="home" aria-label="Orvane Atelier, home"><b>ORVANE</b><small>Atelier &middot; est. 1887</small></a>
+    <div class="hdr-right">
+      <button class="icon-btn" id="btnSearch" aria-label="Search" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg></button>
+      <button class="icon-btn" id="btnWish" aria-label="Wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z"/></svg><span class="badge" id="wishCount" data-n="0" aria-hidden="true"></span></button>
+      <label class="cur"><span class="sr">Currency</span><select id="currency" aria-label="Currency">
+        <option value="USD">USD</option><option value="EUR">EUR</option><option value="GBP">GBP</option><option value="AED">AED</option><option value="PKR">PKR</option></select></label>
+      <button class="icon-btn" id="btnCart" aria-label="Open bag" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="badge" id="cartCount" data-n="0" aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu">
+  <button class="icon-btn mm-close" id="mmClose" aria-label="Close menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <details><summary>Collections</summary>
+    <a href="#product" data-product="meridian">The Meridian Briefcase</a><a href="#product" data-product="santacroce">The Santa Croce Tote</a><a href="#product" data-product="aldwych">The Aldwych Weekender</a><a href="#product" data-product="ubrique">The Ubrique Messenger</a><a href="#product" data-product="piazza">The Piazza Card Holder</a><a href="#product" data-product="brera">The Brera Document Folio</a></details>
+  <details><summary>Bespoke Atelier</summary>
+    <a href="#product" data-product="meridian">Design your briefcase</a><a href="#product" data-product="meridian" data-go-mono="1">Monogram &amp; foil stamping</a><a href="#checkout" data-go="checkout">Gift wrapping &amp; certificate</a></details>
+  <details><summary>Heritage</summary>
+    <a href="#craft" data-go="craft">The workshop</a><a href="#craft" data-go="craft:craftMap">Tannery map</a><a href="#craft" data-go="craft:standards">Ethical footprint</a></details>
+  <details><summary>Care</summary>
+    <a href="#care" data-action="quiz">Care quiz</a><a href="#care" data-go="care">Leather care guide</a><a href="#care" data-go="care:kits">Care kits</a></details>
+</div>
+
+<div class="scrim" id="scrim"></div>
+
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Bag and wishlist">
+  <div class="dr-head">
+    <div class="dr-tabs" role="tablist">
+      <button role="tab" id="tabCart" aria-selected="true" aria-controls="drBody" data-tab="cart">Bag</button>
+      <button role="tab" id="tabWish" aria-selected="false" aria-controls="drBody" data-tab="wish">Wishlist</button>
+    </div>
+    <button class="icon-btn" id="drClose" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="dr-body" id="drBody" role="tabpanel"></div>
+  <div class="dr-foot" id="drFoot"></div>
+</aside>
+
+<div class="search" id="search" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="wrap">
+    <form id="searchForm" role="search">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--brass)" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>
+      <label class="sr" for="searchInput">Search the collection</label>
+      <input id="searchInput" type="search" placeholder="Search briefcases, totes, suede&hellip;" autocomplete="off">
+      <button class="icon-btn" type="button" id="searchClose" aria-label="Close search"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </form>
+    <div class="search-res" id="searchRes" aria-live="polite"></div>
+  </div>
+</div>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-box" id="modalBox"></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<main id="main">
+
+<!-- HOME -->
+<div class="view" data-view="home" id="view-home">
+  <section class="hero" aria-label="Hand-stitching a saddle seam">
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">Atelier Orvane &middot; est. 1887</span>
+        <h1>Cut, stitched and <em>burnished</em> by hand.</h1>
+        <p class="lede">Full-grain hides from Tuscan and Andalusian tanneries, made into pieces you will still be carrying in thirty years.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#product" data-product="meridian">Design your briefcase</a>
+          <a class="btn" href="#home" data-go="home:collection">Explore the collection</a>
+        </div>
+      </div>
+    </div>
+    <button class="hero-pause" id="heroPause" aria-pressed="false">Pause film</button>
+    <div class="hero-meter" id="heroMeter" aria-hidden="true">Saddle stitch &middot; waxed linen thread<br><b id="heroCount">Stitch 0 / 0</b></div>
+  </section>
+
+  <section class="section wrap teaser" aria-labelledby="teaserH">
+    <div class="teaser-art" aria-hidden="true"><div id="teaserArt" style="width:100%;height:100%"></div></div>
+    <div>
+      <span class="eyebrow">Interactive atelier</span>
+      <h2 id="teaserH">Design your custom briefcase</h2>
+      <p class="lede">Turn it in three dimensions, swap the hide, choose the brass, and see your initials stamped into the leather before a single cut is made.</p>
+      <div class="teaser-row"><span class="lbl" id="swLbl">Leather colour</span><div class="swatches" id="teaserSw" role="group" aria-labelledby="swLbl"></div></div>
+      <a class="btn primary" href="#product" id="teaserGo" data-product="meridian" data-keep-tint="1">Open the configurator</a>
+    </div>
+  </section>
+
+  <section class="section wrap" id="collection" aria-labelledby="colH" style="padding-top:0">
+    <div class="sec-head">
+      <div><span class="eyebrow">The collection</span><h2 id="colH">Pieces to grow old with</h2></div>
+      <p class="muted" style="max-width:38ch">Hover any piece to see the leather change from full-grain to pebble.</p>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="story" id="story" aria-labelledby="storyH">
+    <div class="wrap story-in">
+      <div class="story-media" aria-hidden="true">
+        <div class="px-frame px-a"><canvas id="storyA" data-speed="0.12"></canvas></div>
+        <div class="px-frame px-b"><canvas id="storyB" data-speed="0.28"></canvas></div>
+      </div>
+      <div class="story-copy">
+        <span class="eyebrow">The maker</span>
+        <h2 id="storyH">Forty days in the pit. Eleven hours at the bench.</h2>
+        <p class="lede">Our hides are tanned slowly in oak and chestnut, then cut by hand and sewn with two needles on a single waxed thread. If a seam fails, it is the leather that gives way, never the stitch.</p>
+        <blockquote class="quote">The first time someone's bag comes back after ten years, darker and softer and entirely theirs, that is when I know it was made right.<cite>Marta Bellandi, master cutter, third generation</cite></blockquote>
+        <div class="stats">
+          <div><b class="num">8</b><span>Stitches per inch</span></div>
+          <div><b class="num">412</b><span>Hand stitches per briefcase</span></div>
+          <div><b class="num">5</b><span>Sites, all audited</span></div>
+        </div>
+        <div><a class="btn" href="#craft" data-go="craft">Visit the workshop</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="duo">
+      <div class="panel"><span class="eyebrow">Heritage</span><h3>See where your hide was tanned</h3><p class="muted">An open map of every tannery we work with, with audit ratings, tanning method and the distance each hide travels.</p><div><a class="btn" href="#craft" data-go="craft:craftMap">Open the tannery map</a></div></div>
+      <div class="panel"><span class="eyebrow">Care concierge</span><h3>A routine built for your climate</h3><p class="muted">Three questions about where you live and how you carry. We assemble the oils, brushes and balms your leather needs.</p><div><button class="btn" data-action="quiz">Start the care quiz</button></div></div>
+    </div>
+  </section>
+</div>
+
+<!-- PRODUCT -->
+<div class="view" data-view="product" id="view-product" hidden>
+  <div class="pdp">
+    <div class="pdp-left">
+      <div class="stage-tabs" role="tablist" aria-label="Product views">
+        <button role="tab" id="tab3d" aria-selected="true" aria-controls="panel3d">3D configurator</button>
+        <button role="tab" id="tabGal" aria-selected="false" aria-controls="panelGal">Grain &amp; gallery</button>
+      </div>
+      <div class="stage-panel" id="panel3d" role="tabpanel" aria-labelledby="tab3d">
+        <div id="stage3d" tabindex="0" role="application" aria-label="Interactive 3D product. Arrow keys rotate, plus and minus zoom."></div>
+        <div class="stage-load" id="stageLoad">Loading 3D scene</div>
+        <div class="stage-ui">
+          <button id="zoomIn" aria-label="Zoom in">+</button>
+          <button id="zoomOut" aria-label="Zoom out">&minus;</button>
+          <button id="autoRot" aria-label="Auto-rotate" aria-pressed="true" title="Auto-rotate"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4v4h-4"/></svg></button>
+          <button id="resetCam" aria-label="Reset view" title="Reset view"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></button>
+        </div>
+        <div class="stage-hint">Drag to orbit &middot; Shift-drag or two fingers to pan &middot; Pinch or scroll to zoom</div>
+      </div>
+      <div class="stage-panel" id="panelGal" role="tabpanel" aria-labelledby="tabGal" hidden>
+        <div class="gallery">
+          <button class="gal-main" id="galMain" aria-label="Open macro grain inspection">
+            <canvas id="galCanvas"></canvas>
+            <div class="loupe" id="loupe" hidden><canvas id="loupeCanvas"></canvas></div>
+            <span class="gal-hint">Hover to inspect &middot; click for macro view</span>
+          </button>
+          <div class="gal-thumbs" id="galThumbs"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pdp-right">
+      <div class="crumbs"><button data-go="home">Home</button> / <button data-go="home:collection">Collection</button> / <span id="crumbName"></span></div>
+      <div class="pdp-title">
+        <span class="eyebrow" id="pCat"></span>
+        <h1 style="font-size:clamp(2.3rem,4vw,3.6rem)" id="pName"></h1>
+        <div class="price num" id="pPrice" aria-live="polite"></div>
+        <p class="lede" id="pBlurb"></p>
+      </div>
+
+      <fieldset><legend><span class="lbl">Leather</span><output id="outMat" for="grpMat"></output></legend><div class="chips" id="grpMat"></div></fieldset>
+      <fieldset><legend><span class="lbl">Colour</span><output id="outTint"></output></legend><div class="chips" id="grpTint"></div></fieldset>
+      <fieldset><legend><span class="lbl">Hardware</span><output id="outHw"></output></legend><div class="chips" id="grpHw"></div></fieldset>
+
+      <fieldset id="monoSet"><legend><span class="lbl">Monogram</span><output id="outMono">Optional, 1 to 4 characters</output></legend>
+        <div class="mono-row">
+          <div class="field"><label for="monoIn">Initials</label><input class="input mono-in" id="monoIn" maxlength="4" autocomplete="off" placeholder="ABC" spellcheck="false"></div>
+          <div><span class="lbl" id="stampLbl" style="display:block;margin-bottom:.4rem">Stamping</span><div class="chips" id="grpStamp" role="radiogroup" aria-labelledby="stampLbl"></div></div>
+        </div>
+      </fieldset>
+
+      <div class="buy">
+        <div class="buy-row">
+          <div class="qty" role="group" aria-label="Quantity"><button id="qMinus" aria-label="Decrease quantity">&minus;</button><span id="qVal" class="num" aria-live="polite">1</span><button id="qPlus" aria-label="Increase quantity">+</button></div>
+          <button class="btn primary block" id="addBag">Add to bag</button>
+        </div>
+        <div class="buy-row b2">
+          <button class="btn block" id="arBtn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3 4 7.5v9L12 21l8-4.5v-9L12 3Z"/><path d="M4 7.5 12 12l8-4.5M12 12v9"/></svg>View in your room</button>
+          <button class="btn block" id="wishBtn" aria-pressed="false">Save to wishlist</button>
+        </div>
+      </div>
+
+      <dl class="specs" id="pSpecs"></dl>
+      <ul class="perks">
+        <li>Complimentary delivery over $500, signed for on arrival</li>
+        <li>Lifetime repair of stitching, hardware and edge paint</li>
+        <li>Made to order in six to eight weeks, cut and signed by one maker</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="section wrap" id="patinaSec" aria-labelledby="patH">
+    <div class="sec-head"><div><span class="eyebrow">Ageing &amp; patina</span><h2 id="patH">How this leather will look in five years</h2></div>
+      <fieldset style="max-width:100%"><legend class="sr">Leather to age</legend><div class="chips" id="grpPat"></div></fieldset></div>
+    <div class="patina">
+      <div class="patina-view"><canvas id="patinaCanvas" width="1200" height="750" role="img" aria-label="Close-up of a leather flap and brass buckle ageing over five years"></canvas><div class="patina-tag num" id="patTag" aria-hidden="true">Year 0</div></div>
+      <div style="display:grid;gap:1.4rem">
+        <div>
+          <label class="lbl" for="patYear">Years of daily use</label>
+          <input class="slider" type="range" id="patYear" min="0" max="5" step="0.05" value="0" aria-describedby="patCopy">
+          <div class="ticks num" aria-hidden="true"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+        </div>
+        <div class="meters" aria-hidden="true">
+          <div class="meter"><div class="top"><span>Colour depth</span><b class="num" id="mDepth">0%</b></div><div class="bar"><i id="bDepth"></i></div></div>
+          <div class="meter"><div class="top"><span>Softness</span><b class="num" id="mSoft">0%</b></div><div class="bar"><i id="bSoft"></i></div></div>
+          <div class="meter"><div class="top"><span>Burnished sheen</span><b class="num" id="mSheen">0%</b></div><div class="bar"><i id="bSheen"></i></div></div>
+        </div>
+        <div class="patina-copy" id="patCopy" aria-live="polite"></div>
+        <div><button class="btn" id="patPlay">Play five years</button></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- CRAFT -->
+<div class="view" data-view="craft" id="view-craft" hidden>
+  <div class="wrap">
+    <header class="page-head"><span class="eyebrow">Heritage &amp; transparency</span><h1>Every hide has an address.</h1><p class="lede">We work with five sites and publish what we know about each: how the hide was tanned, who audited it, and how far it travelled to reach the bench.</p></header>
+  </div>
+  <section class="wrap" id="craftMap" aria-labelledby="mapH" style="padding-bottom:clamp(48px,7vw,96px)">
+    <h2 id="mapH" class="sr">Tannery and atelier map</h2>
+    <div class="map-wrap">
+      <div>
+        <div class="map" id="map">
+          <div class="map-ctl" role="group" aria-label="Map view"><button id="mapWorld" aria-pressed="false">World</button><button id="mapEu" aria-pressed="true">Europe</button></div>
+          <svg id="mapSvg" role="img" aria-label="Dotted map showing tannery and atelier locations"></svg>
+          <div id="pins"></div>
+        </div>
+        <div class="legend"><span><i></i>Tannery</span><span><i class="sq"></i>Atelier</span><span>Dashed lines show hide routes</span></div>
+      </div>
+      <div class="site-card" id="siteCard" aria-live="polite"></div>
+    </div>
+  </section>
+  <section class="section wrap" id="standards" style="border-top:1px solid var(--line-2)" aria-labelledby="stdH">
+    <div class="sec-head"><div><span class="eyebrow">Ethical footprint</span><h2 id="stdH">What we hold ourselves to</h2></div></div>
+    <div class="pillars">
+      <div class="panel"><h3>Traceable to the farm</h3><p class="muted">Every hide carries a lot number from the abattoir to the cutting table. Ask us for yours and we will send the chain of custody.</p></div>
+      <div class="panel"><h3>Slow, plant-based tanning</h3><p class="muted">Most of our leather is tanned in chestnut, mimosa or oak bark. It takes weeks longer than chrome, and it ages better.</p></div>
+      <div class="panel"><h3>Built to be repaired</h3><p class="muted">Seams, hardware and edge paint can all be renewed in our workshop for life. The best bag is the one you never replace.</p></div>
+    </div>
+    <p class="fine" style="margin-top:1.4rem">Site names, audit ratings and metrics on this page are sample data. Replace them with your audited figures before publishing.</p>
+  </section>
+</div>
+
+<!-- CARE -->
+<div class="view" data-view="care" id="view-care" hidden>
+  <div class="wrap">
+    <header class="page-head"><span class="eyebrow">Leather care</span><h1>Look after it once a season.</h1><p class="lede">Good leather asks for very little. Clean it, feed it, shield it from weather, and store it with room to breathe.</p><div><button class="btn primary" data-action="quiz">Build my care kit</button></div></header>
+  </div>
+  <section class="wrap section" style="padding-top:0">
+    <div class="care-grid">
+      <div class="care-card"><span class="step">i. Clean</span><h4>Brush, then wipe</h4><p>A horsehair brush lifts dust from the grain. Use a barely damp cloth for marks, never soap on suede.</p></div>
+      <div class="care-card"><span class="step">ii. Condition</span><h4>Feed the hide</h4><p>Work a thin layer of balm or oil in small circles. Let it rest overnight before buffing.</p></div>
+      <div class="care-card"><span class="step">iii. Protect</span><h4>Shield from weather</h4><p>Wax or spray adds water resistance. Re-apply when beads of water stop forming.</p></div>
+      <div class="care-card"><span class="step">iv. Store</span><h4>Let it breathe</h4><p>Stuff lightly with paper, keep in a cotton dust bag, away from radiators and direct sun.</p></div>
+    </div>
+  </section>
+  <section class="wrap section" id="kits" style="border-top:1px solid var(--line-2)">
+    <div class="sec-head"><div><span class="eyebrow">Care kits</span><h2>Individual preparations</h2></div></div>
+    <div class="kit-grid" id="kitGrid"></div>
+  </section>
+</div>
+
+<!-- CHECKOUT -->
+<div class="view" data-view="checkout" id="view-checkout" hidden>
+  <div class="wrap">
+    <form class="co" id="coForm" novalidate>
+      <div>
+        <header class="page-head" style="padding-block:0 1.6rem"><span class="eyebrow">Checkout &amp; concierge</span><h1 style="font-size:clamp(2.4rem,4.4vw,3.8rem)">Almost yours.</h1></header>
+        <section class="co-sec" aria-labelledby="coH1"><h3 id="coH1">Delivery <small>Step 1</small></h3>
+          <div class="two"><div class="field"><label for="coFirst">First name</label><input class="input" id="coFirst" autocomplete="given-name" required></div><div class="field"><label for="coLast">Last name</label><input class="input" id="coLast" autocomplete="family-name" required></div></div>
+          <div class="field"><label for="coEmail">Email</label><input class="input" id="coEmail" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="coAddr">Address</label><input class="input" id="coAddr" autocomplete="street-address" required></div>
+          <div class="two"><div class="field"><label for="coCity">City</label><input class="input" id="coCity" autocomplete="address-level2" required></div><div class="field"><label for="coCountry">Country</label><select class="input" id="coCountry" autocomplete="country-name"><option>Pakistan</option><option>United Kingdom</option><option>United States</option><option>United Arab Emirates</option><option>Germany</option><option>Italy</option><option>France</option></select></div></div>
+        </section>
+        <section class="co-sec" aria-labelledby="coH2"><h3 id="coH2">Gift wrapping <small>Step 2</small></h3>
+          <div class="toggle"><svg class="ico" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--brass)" stroke-width="1.4" aria-hidden="true"><rect x="3" y="9" width="18" height="11"/><path d="M3 9h18M12 9v11M12 9S9 4 7 5s0 4 5 4 7-3 5-4-5 4-5 4Z"/></svg><div><b>Atelier gift wrapping</b><small>Dust bag, tissue and a keepsake box tied with ribbon. <span id="giftPrice"></span></small></div><label class="switch"><span class="sr">Add gift wrapping</span><input type="checkbox" id="giftOn"><i></i></label></div>
+          <div id="giftOpts" hidden><span class="lbl" id="ribLbl" style="display:block;margin-bottom:.5rem">Ribbon</span><div class="chips" id="grpRib" role="radiogroup" aria-labelledby="ribLbl"></div></div>
+          <div class="preview-row"><div class="prev" aria-live="polite"><div id="giftArt" style="width:100%;display:grid;place-items:center"></div></div>
+            <div class="prev"><div class="note-card" id="noteCard"><p id="noteText" class="num"></p><small id="noteFrom"></small></div></div></div>
+          <div class="field"><label for="noteIn">Handwritten note</label><textarea class="input" id="noteIn" maxlength="240" placeholder="Written by hand in fountain pen and slipped in with the piece."></textarea><span class="fine"><span id="noteLeft">240</span> characters left</span></div>
+          <div class="field"><label for="noteSign">Signed</label><input class="input" id="noteSign" maxlength="30" placeholder="With love, Sara"></div>
+        </section>
+        <section class="co-sec" aria-labelledby="coH3"><h3 id="coH3">Certificate of authenticity <small>Step 3</small></h3>
+          <div class="toggle"><svg class="ico" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--brass)" stroke-width="1.4" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.4 3 7.5 7.5 9.5 4.5-2 7.5-5.100 7.500-9.500V6L12 3Z"/><path d="m8.800 12 2.200 2.200 4.200-4.400"/></svg><div><b>Register a digital certificate</b><small>A serial number tied to your hide, maker and tannery, kept for resale and repairs. Free.</small></div><label class="switch"><span class="sr">Register digital certificate</span><input type="checkbox" id="certOn" checked><i></i></label></div>
+          <div id="certFields" class="two"><div class="field"><label for="certName">Owner name</label><input class="input" id="certName" autocomplete="name"></div><div class="field"><label for="certMail">Registration email</label><input class="input" id="certMail" type="email" autocomplete="email"></div></div>
+          <div class="prev" id="certPrev" style="min-height:0"></div>
+        </section>
+        <section class="co-sec" aria-labelledby="coH4"><h3 id="coH4">Payment <small>Step 4</small></h3>
+          <p class="muted">Payment is not connected in this build. Placing the order here confirms your selections without charging a card.</p></section>
+      </div>
+      <aside class="summary" aria-labelledby="sumH"><h3 id="sumH">Your order</h3><div id="sumBody"></div><button type="submit" class="btn primary block" id="placeOrder">Place order</button><span class="fine" id="coErr" role="alert"></span></aside>
+    </form>
+    <div id="coDone" hidden></div>
+  </div>
+</div>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-in">
+      <div><div class="logo" style="text-align:left;justify-self:start"><b style="font-size:1.5rem;padding-left:0">ORVANE</b><small>Atelier &middot; est. 1887</small></div>
+        <p class="muted" style="margin-top:1rem;max-width:34ch;font-size:.86rem">Leather goods cut, stitched and burnished by hand, repaired for life.</p>
+        <form id="newsForm"><label class="sr" for="newsMail">Email</label><input class="input" id="newsMail" type="email" placeholder="Email for atelier news" autocomplete="email"><button class="btn" type="submit">Join</button></form></div>
+      <div><h4>Shop</h4><ul><li><a href="#home" data-go="home:collection">Collection</a></li><li><a href="#product" data-product="meridian">Bespoke briefcase</a></li><li><a href="#checkout" data-go="checkout">Bag &amp; checkout</a></li></ul></div>
+      <div><h4>Heritage</h4><ul><li><a href="#craft" data-go="craft">Our craft</a></li><li><a href="#craft" data-go="craft:craftMap">Tannery map</a></li><li><a href="#craft" data-go="craft:standards">Ethical footprint</a></li></ul></div>
+      <div><h4>Care</h4><ul><li><a href="#care" data-action="quiz">Care quiz</a></li><li><a href="#care" data-go="care">Care guide</a></li><li><a href="#care" data-go="care:kits">Care kits</a></li></ul></div>
+    </div>
+    <div class="foot-base"><span>&copy; 2026 Orvane Atelier. Sample brand for demonstration.</span><span>Prices in other currencies are indicative.</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
